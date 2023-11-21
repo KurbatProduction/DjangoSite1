@@ -25,12 +25,17 @@ SECRET_KEY = 'django-insecure-yznznzx!(4^f_h7^y$l=b&@#--t%4jghu7u%5*wwo#w-_-fh_k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1"
+]
 
+CSRF_TRUSTED_ORIGINS = ['http://localhost', "http://127.0.0.1"]
 
 # Application definition
 
 INSTALLED_APPS = [
+    'sitik',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
