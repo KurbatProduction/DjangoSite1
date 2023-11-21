@@ -15,9 +15,7 @@ body::-webkit-scrollbar {
     margin: 15vh auto;
     text-align: center;
     font-size: 40px;
-    /*border: 1px solid #000;*/
     border-radius: 20px;
-    /*box-shadow: 0 4px 10px rgba(0, 0, 0, .5);*/
 }
 
 .main_text div {
@@ -51,26 +49,21 @@ footer {
 
 .wrapper {
     display: grid;
-    /*border: 1px solid #000;*/
     border-radius: 20px;
     width: 84vw;
     margin: 20px auto;
     background-color: #bcbaba;
     grid-template-columns: repeat(6, 14vw);
     grid-template-rows: auto auto auto 40vh 6vh;
-    /*box-shadow: 0 0 20px rgba(0, 0, 0, .5);*/
 }
 
 .wrapper_detail {
     display: grid;
-    /*border: 1px solid #000;*/
     border-radius: 20px;
     width: 84vw;
     margin: 20px auto;
     background-color: #bcbaba;
     grid-template-columns: repeat(6, 14vw);
-    /*grid-template-rows: auto auto auto auto auto;*/
-    /*box-shadow: 0 0 20px rgba(0, 0, 0, .5);*/
 }
 
 .date {
@@ -208,7 +201,6 @@ footer {
     width: 90%;
     text-align: center;
     margin: auto auto;
-    /*border: 1px solid rgb(0, 0, 0);*/
     border-radius: 20px;
 }
 
@@ -270,7 +262,6 @@ footer {
 .navbar-menu li a {
     display: inline-block;
     color: white;
-    /*opacity: 0.6;*/
     text-decoration: none;
     padding: 20px;
     transition: opacity 0.2s ease-in-out;
