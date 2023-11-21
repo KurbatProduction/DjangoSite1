@@ -12,14 +12,18 @@ body::-webkit-scrollbar {
     background-color: #bcbaba;
     width: 70vw;
     height: max-content;
-    margin: 15vh auto;
+    margin: 50px auto 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     border-radius: 20px;
 }
 
 .main_text div {
     padding: 16px 20px 20px 20px;
+}
+
+.disclamer {
+    font-size: 15px;
 }
 
 .naming {
@@ -155,21 +159,20 @@ footer {
 .contacts_grid {
     display: grid;
     gap: 2vw;
-    width: 92vw;
+    width: 86vw;
     margin: 20px auto;
-    grid-template-columns: repeat(2, 45vw);
+    grid-template-columns: repeat(4, 20vw);
 }
 
 .contacts_subgrid {
     display: grid;
-    grid-template-rows: 22vh repeat(3, 6.5vh);
-    /*border: 1px solid rgb(128, 128, 128);*/
+    grid-template-rows: 30vh repeat(3, auto);
     border-radius: 20px;
     align-items: center;
 }
 
 .contacts_item {
-    width: 45vw;
+    width: 20vw;
     background-color: #bcbaba;
     text-align: center;
     border-radius: 20px;
@@ -177,51 +180,53 @@ footer {
 
 .contacts_item1 {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
 }
 
 .contacts_item2 {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
 }
 
 .contacts_item3 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-column: 3 / 4;
 }
 
 .contacts_item4 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 4 / 5;
 }
 
 .contacts_img {
     grid-row: 1 / 2;
     object-fit: contain;
-    width: 90%;
+    height: 90%;
     text-align: center;
-    margin: auto auto;
-    border-radius: 20px;
+    margin: auto;
 }
 
-.contacts_fio {
+.contacts_f {
     grid-row: 2 / 3;
-    margin: auto auto;
-    font-size: 35px;
+    margin: 10px 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contacts_io {
+    grid-row: 3 / 4;
+    margin: 0 15px 10px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 .contacts_position {
-    grid-row: 3 / 4;
-    margin: auto auto;
-    font-size: 32px;
+    grid-row: 4 / 5;
+    margin: 10px 15px;
+    font-size: 16px;
 }
 
 .contacts_btn {
-    grid-row: 4 / 5;
-    margin: auto auto;
+    grid-row: 5 / 6;
+    margin: 10px 15px;
     background-color: #145878;
-    width: 35vw;
+    width: 10vw;
     height: 4vh;
     border-radius: 15px;
     display: flex;
@@ -230,10 +235,101 @@ footer {
 
 .contacts_btn a {
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     text-decoration: none;
     margin: auto;
     font-weight: 700;
+}
+
+
+@media (max-width: 1024px) {
+    .contacts_grid {
+        display: grid;
+        gap: 2vw;
+        width: 92vw;
+        margin: 20px auto;
+        grid-template-columns: repeat(2, 45vw);
+    }
+
+    .contacts_subgrid {
+        display: grid;
+        grid-template-rows: 22vh repeat(3, auto);
+        border-radius: 20px;
+        align-items: center;
+    }
+
+    .contacts_item {
+        width: 45vw;
+        background-color: #bcbaba;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .contacts_item1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .contacts_item2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .contacts_item3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .contacts_item4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .contacts_img {
+        grid-row: 1 / 2;
+        object-fit: contain;
+        width: 90%;
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .contacts_f {
+        grid-row: 2 / 3;
+        margin: 10px 15px 0;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .contacts_io {
+        grid-row: 3 / 4;
+        margin: 0 15px 10px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .contacts_position {
+        grid-row: 4 / 5;
+        margin: 10px 15px;
+        font-size: 32px;
+    }
+
+    .contacts_btn {
+        grid-row: 5 / 6;
+        margin: 10px auto 20px;
+        background-color: #145878;
+        width: 35vw;
+        height: 4vh;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contacts_btn a {
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        margin: auto;
+        font-weight: 700;
+    }
 }
 
 .navbar {
@@ -262,10 +358,15 @@ footer {
 .navbar-menu li a {
     display: inline-block;
     color: white;
+    opacity: 0.6;
     text-decoration: none;
     padding: 20px;
     transition: opacity 0.2s ease-in-out;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.navbar-menu li a:hover {
+    opacity: 1;
 }
 
 .navbar-menu li a:hover {
@@ -284,10 +385,6 @@ footer {
     color: white;
     padding-left: 20px;
  }
-
-.disclamer {
-    font-size: 10px;
-}
 
 .pop_up {
     display: none;
