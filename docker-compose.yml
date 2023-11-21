@@ -1,0 +1,5 @@
+version: "3"
+services:
+  web-django:
+    build: .
+    network_mode: host
