@@ -1,0 +1,28 @@
+{% extends 'sitik/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Новости
+{% endblock %}
+
+{% block content %}
+    {% for el in news %}
+        <div class="wrapper">
+            <div class="date">
+                {{ el.date|date:"d.m.Y" }}
+            </div>
+            <div class="title">
+                {{ el.title }}
+            </div>
+            <div class="description">
+                {{ el.description }}
+            </div>
+            <div class="img_view">
+                <img src="{{ el.image }}" alt="Картинка не прогрузилась:(">
+            </div>
+            <div class="readbtn">
+                <a href="{% url 'news_detail' el.id %}" class="btn btn-primary">Читать полностью</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

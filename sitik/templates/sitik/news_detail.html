@@ -1,0 +1,26 @@
+{% extends 'sitik/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Новость
+{% endblock %}
+
+{% block content %}
+    <div class="wrapper_detail">
+        <div class="date">
+            {{ single_new.date|date:"d.m.Y" }}
+        </div>
+        <div class="title">
+            {{ single_new.title }}
+        </div>
+        <div class="description">
+            {{ single_new.description }}
+        </div>
+        <div class="image_view">
+            <img src="{{ single_new.image }}" alt="Картинка не прогрузилась:(">
+        </div>
+        <div class="article_text">
+            {{ single_new.text }}
+        </div>
+    </div>
+{% endblock %}

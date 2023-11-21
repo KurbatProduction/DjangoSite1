@@ -1,0 +1,77 @@
+{% extends 'sitik/layout.html' %}
+{% load static %}
+{% block title %}
+    Контакты
+{% endblock %}
+
+{% block content %}
+    <div class="contacts_grid">
+        <div class="contacts_item contacts_item1">
+            <div class="contacts_subgrid">
+                <img class="contacts_img" src="{% static 'sitik/img/anya.jpg' %}" alt="">
+                <p class="contacts_fio">Курбатова Анна Владимировна</p>
+                <p class="contacts_position">Контент-директор</p>
+                <div class="contacts_btn">
+                    <a href="https://t.me/anna_kav97" target="_blank">Сказать спасибо</a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts_item contacts_item2">
+            <div class="contacts_subgrid">
+                <img class="contacts_img" src="{% static 'sitik/img/polina.jpg' %}" alt="">
+                <p class="contacts_fio">Сорокина Полина Валентиновна</p>
+                <p class="contacts_position">Креативный директор</p>
+                <div class="contacts_btn">
+                    <a href="https://t.me/magpiew" target="_blank">Сказать спасибо</a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts_item contacts_item3">
+            <div class="contacts_subgrid">
+                <img class="contacts_img" src="{% static 'sitik/img/vova.jpg' %}" alt="">
+                <p class="contacts_fio">Курбатов Владимир Викторович</p>
+                <p class="contacts_position">Директор по работе с&nbsp;клиентами</p>
+                <div class="contacts_btn">
+                    <a href="https://t.me/" target="_blank">Сказать спасибо</a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts_item contacts_item4">
+            <div class="contacts_subgrid">
+                <img class="contacts_img" src="{% static 'sitik/img/sereja.jpg' %}" alt="">
+                <p class="contacts_fio">Курбатов Сергей Владимирович</p>
+                <p class="contacts_position">Технический директор</p>
+                <div class="contacts_btn">
+                    <a href="https://t.me/KurbatProduction" target="_blank">Сказать спасибо</a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts_item contacts_item5">
+            <div class="contacts_subgrid">
+                <img class="contacts_img" src="{% static 'sitik/img/natasha.jpg' %}" alt="">
+                <p class="contacts_fio">Курбатова Наталия Викторовна</p>
+                <p class="contacts_position">Виновник торжества</p>
+                <div class="contacts_btn">
+                    <a href="" id="open_pop_up">Нажми на меня!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <p>Дорогая Жена, Мама, Наталия Викторовна!</p>
+                <p>Поздравляем с днем рождения. Мы очень тебя любим и гордимся тобой. Сейчас ты на Шри-Ланке, а часть из
+                    нас в Москве и в Питере - но даже на таком расстоянии мы чувствуем твою любовь и заботу, которой ты
+                    всегда нас
+                    окружаешь.</p>
+                <p>Мы уверены, что все трудности у нас получится преодолеть вместе, и всегда готовы поддержать тебя, как
+                    ты всегда поддерживаешь нас.</p>
+                <p>Хотим пожелать тебе только приятных сюрпризов, много новых приятных эмоций и исполнения мечт.</p>
+                <p>Обнимаем тебя - очно и через расстояние, и поздравляем с твоим днём! Спасибо, что ты есть ❤️</p>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'sitik/js/index.js' %}"></script>
+{% endblock %}
